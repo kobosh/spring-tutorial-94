@@ -25,10 +25,17 @@
 <security:intercept-url pattern="/login" access="permitAll"/>
 <security:intercept-url pattern="/offers" access="permitAll"/>
 <!-- seurity:intercept-url pattern="/**" access="denyAll"/>-->
-<security:form-login  login-page="/login"  authentication-failure-url="/login?error=true"
+<security:form-login  login-page="/login"  authentication-failure-url="/login?error=true" 
+ 
+ login-processing-url="/login"
+ 
+ default-target-url="/home" 
+ username-parameter="username"
+ password-parameter="password"
+ />
 
 
-/>
+
 
 </security:http>
 </beans>

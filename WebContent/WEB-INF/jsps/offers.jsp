@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<table class="offers">
+<!-- <table class="offers">
 <tr><td>Name</td><td>Email</td><td>Offer</td></tr>
 
 <c:forEach var="offer" items="${offers}">
@@ -27,7 +27,7 @@
    
 </tr>
 </c:forEach>
-</table>
+</table>-->
 
 </body>
 </html>

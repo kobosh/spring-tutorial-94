@@ -3,6 +3,7 @@ package com.caveofprogramming.spring.web.controllers;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +25,7 @@ private OffersService offersService;
 	@RequestMapping("/createoffer")
 	public String createAcount(Model model) {
 	
-		model.addAttribute("offer", new Registration());
+		model.addAttribute("offer", new Offer());
 		
 		return "createacount";
 	}
@@ -36,10 +37,10 @@ private OffersService offersService;
 			return "createaccount";
 		}
 		
-		offersService.create(Registration);
+		//offersService.create(Registration);
 		
 		return "accountcreated";
 	}
 } 
 
-}
+
